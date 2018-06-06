@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>北京华丰科能新能源科技有限公司</title>
+
+		<!--bootstap-->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap-4.1.1/css/bootstrap.css" />
+		<!--swiper4-->
+		<link rel="stylesheet" type="text/css" href="lib/swiper4/css/swiper.css" />
+		<!--公有css-->
+		<link rel="stylesheet" type="text/css" href="public/public.css" />
+		<!--私有css-->
+		<link rel="stylesheet" type="text/css" href="" />
+
+		<!--bootstap-->
+		<script src="lib/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--bootstap-->
+		<script src="lib/bootstrap-4.1.1/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--swiper4-->
+		<script src="lib/swiper4/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<!--公有js-->
+		<script src="public/public.js" type="text/javascript" charset="utf-8"></script>
+		<!--私有js-->
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			html {
+				width: 100%;
+				background: url(img/index/top.png) no-repeat center top;
+			}
+			
+			.top-area {
+				width: 1200px;
+				/*min-height: 132px;*/
+				margin: 0 auto;
+			}
+			
+			.top-area .row {
+				margin: 30px 0;
+			}
+			
+			.top-area .row .col-3,
+			.top-area .row .col-2 {
+				text-align: center;
+				line-height: 66px;
+			}
+			
+			.nav-bar-area {
+				background-color: #0a2f7d;
+				width: 100%;
+				min-height: 80px;
+			}
+			
+			.nav-bar {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+				color: white;
+				overflow: hidden;
+			}
+			
+			.nav-bar .nav-item {
+				float: left;
+				padding: 16px 3%;
+				text-align: center;
+			}
+			
+			.nav-bar .nav-item p {
+				/*cursor: pointer;*/
+				margin-bottom: 0px;
+			}
+			
+			.nav-bar .nav-item a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			.slider-area {
+				width: 100%;
+			}
+			
+			.swiper-slide {
+				/*width: 100%;*/
+				margin: 0 auto;
+			}
+			
+			.message-area {
+				background-color: #f2f2f2;
+				width: 100%;
+				height: 70px;
+				line-height: 70px;
+				font-size: 14px;
+			}
+			
+			.message-area .row {
+				width: 1200px;
+				margin: 0 auto;
+				list-style-type: none;
+			}
+			
+			.about-area {
+				width: 1200px;
+				margin: 50px auto;
+				text-align: center;
+			}
+			
+			.about-area .row .intro {
+				text-align: left;
+			}
+			
+			.performance-area {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			
+			.performance-area .hear-bar {}
+			
+			.performance-area .content {
+				padding-top: 20px;
+			}
+			
+			.performance-area .case-show .swiper-slide img {
+				width: 300px;
+				height: 245px;
+			}
+			
+			.news-area {
+				width: 1200px;
+				margin: 20px auto;
+			}
+			
+			.news-area .news .first-news .img {
+				width: 100%;
+				padding: 20px;
+			}
+			
+			.news-area .news .first-news .content {
+				padding-top: 30px;
+			}
+			
+			.news-area .news .first-news .content .first-news-header {
+				color: #0a2f7d;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.news-area .news .first-news .content .first-news-content {
+				line-height: 24px;
+				color: #666;
+				font-size: 13px;
+			}
+			
+			.news-area .news .first-news .content .first-news-more {
+				text-align: center;
+				background-color: #008141;
+				width: 90px;
+				display: block;
+				height: 26px;
+				color: #fff;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 26px;
+			}
+			
+			.news-area .board {
+				text-align: right;
+			}
+			
+			.footer-area {
+				background-color: #00428c;
+				width: 100%;
+				height: 50px;
+			}
+			
+			.footer-area .footer {
+				width: 1200px;
+				margin: 0 auto;
+				color: white;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			
+			.footer-area .footer .copyright {
+				float: left;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .copyright p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support {
+				float: right;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .support p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support a {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--top-->
+		<div class="top-area">
+			<div class="row">
+				<div class="col-7">
+					<img src="img/index/f2cf0083-ea28-46c1-ad24-f70a1a86b08c.png" />
+				</div>
+				<div class="col-3">
+					<img src="img/index/tel.png" />
+				</div>
+				<div class="col-2">
+					<img src="img/index/ewm.png" />
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<div class="nav-bar-area">
+			<nav class="nav-bar">
+				<div class="nav-item">
+					<p>网站首页</p>
+					<p>HOME</p>
+				</div>
+				<div class="nav-item">
+					<p>关于我们</p>
+					<p>ABOUT</p>
+				</div>
+				<div class="nav-item">
+					<p>工程业绩</p>
+					<p>CASE</p>
+				</div>
+				<div class="nav-item">
+					<p>荣誉资质</p>
+					<p>HONORS</p>
+				</div>
+				<div class="nav-item">
+					<p>新闻资讯</p>
+					<p>NEWS</p>
+				</div>
+				<div class="nav-item">
+					<p>人才招聘</p>
+					<p>JOIN US</p>
+				</div>
+				<div class="nav-item">
+					<a href="messages.html"><p>在线留言</p>
+					<p>MESSAGES</p></a>
+				</div>
+				<div class="nav-item">
+					<p>联系我们</p>
+					<p>CONTAXT</p>
+				</div>
+			</nav>
+		</div>
+		<!--slider-->
+		<div class="slider-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></div>
+					<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></div>
+					<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></div>
+				</div>
+			</div>
+		</div>
+		<!--message-->
+		<div class="message-area">
+			<div class="row">
+				<div class="col-2">
+					<p><img src="img/index/gg_ico.png"><span style="color: #0a2f7d; font-size: 15px; font-weight: bold;">&nbsp;&nbsp;&nbsp; 通知公告：</span></p>
+				</div>
+				<div class="col-7">
+					<a href="/news_detail/newsId=211.html" title="国网黑龙江关于供应商不良行为处理情况的通报(2017年11月)" target="_self">
+						国网黑龙江关于供应商不良行为处理情况的通报(2017年11月)</a>
+				</div>
+				<div class="col-2">
+					<span>发布时间：</span>2017-12-01
+				</div>
+				<div class="col-1">
+					<img src="img/index/gg_more.png" />
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="main-area">
+			<!--about-->
+			<div class="about-area">
+				<div class="row">
+					<div class="col-3">
+						<img src="img/index/gywm.png" />
+					</div>
+					<div class="col-5 intro">
+						<p><img src="img/index/637c014a-f423-4d0e-b096-5034a2f70b16.png" /></p>
+						<p>
+							瑞丰电力工程集团有限公司坐落于著有中国雪乡美称的牡丹江市，公司主要从事220KV及以下送电工程及同电压等级变电站安装工程，110KV及以下变配电配套设备调试，电力器材销售，用电技术咨询等业务。瑞丰电力工程集团有限公司具备电力工程施工总承包贰级、送变电工程专业承包贰级；承装（修、试）类电力设施许可二级许可；安全生产许可证；质量、环境、职业健康安全管理体制认证证书，现有注册资金6500万元。
+						</p>
+					</div>
+					<div class="col-4">
+						<img src="img/index/qywh.jpg" />
+					</div>
+				</div>
+			</div>
+			<!--performance-->
+			<div class="performance-area">
+				<div class="hear-bar">
+					<img src="img/index/gcyj.png" />
+				</div>
+				<div class="content">
+					<div class="swiper-container case-show">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/12dbcda7-89ec-4028-8df0-f85a29e910a6.jpg" /></div>
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/331235db-6200-48cf-8f17-b6299d2dffb3.jpg" /></div>
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/3e9d0bd8-6254-48c8-be4e-f920fc0942a4.jpg" /></div>
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/944245c1-725e-4e66-98d4-7456a1769f1f.jpg" /></div>
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/c857dd1f-7644-491e-bb8b-a2cd16c4d58f.jpg" /></div>
+							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/cd60680a-9370-4175-afbe-12b7e253f1e5.jpg" /></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--news-->
+			<div class="news-area">
+				<div class="row">
+					<div class="col-7">
+						<div class="news">
+							<div class="hear-bar">
+								<img src="img/index/xwzx.png" />
+							</div>
+							<div class="first-news">
+								<div class="row">
+									<div class="col-4 img">
+										<img src="img/index/first-news.jpg" style="width: 100%;" />
+									</div>
+									<div class="col-8 content">
+										<h4 class="first-news-header">勇担电网企业使命 助力现代化新龙江建设</h4>
+										<p class="first-news-content">22462692018-05-3109:18:36.0张桂英勇担电网企业使命助力现代化新龙江建设电网调峰电网企业电力外送电网建设发电出力风电装机容量风电发展电网改造电力消纳省电力公司23010国内http://sjdb.hljnews.cn:8080/img/...</p>
+										<p class="first-news-more">详细&gt;&gt;</p>
+									</div>
+								</div>
+							</div>
+							<div class="news-list">
+								<ul>
+									<li><span>我国拟推行电力建筑工人实名制 需登记并经基本安全培训</span><span style="float: right;">发布时间：2016-09-09</span></li>
+									<li><span>思考！独立售电公司面临的四大风险</span><span style="float: right;">发布时间：2016-09-09</span></li>
+									<li><span>干货！风电开发建设法律知识：进场道路怎样建？侵权责任如何防？</span><span style="float: right;">发布时间：2016-09-09</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="board">
+							<img src="img/index/kj1.png" />
+							<img src="img/index/kj2.jpg" />
+							<img src="img/index/kj3.jpg" />
+							<img src="img/index/kj4.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footer-->
+			<div class="footer-area">
+				<div class="footer">
+					<div class="copyright">
+						<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
+					</div>
+					<div class="support">
+						<p>
+							<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			new Swiper('.swiper-container', {
+				//		direction: '',
+				autoplay: true,
+				loop: true,
+				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				effect: 'slide',
+				fadeEffect: {
+					crossFade: false,
+				},
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			new Swiper('.case-show', {
+				//		direction: '',
+				autoplay: {
+					delay: 3000,
+					//					disableOnInteraction: false,
+					//					waitForTransition: false,
+					//					reverseDirection: true
+				},
+				loop: true,
+				//				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				slidesPerView: 4,
+				spaceBetween: 20,
+				effect: 'slide',
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			$('.nav-item').first().css('background-color', 'green');
+			$('.nav-item').on('mouseover', function() {
+				$(this).siblings().css('background', 'none');
+				$(this).css('background-color', 'green');
+			})
+		</script>
+	</body>
+
+</html>

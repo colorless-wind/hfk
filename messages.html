@@ -85,11 +85,164 @@
 				/*width: 100%;*/
 				margin: 0 auto;
 			}
+			/*message start*/
 			
 			.live-message-area {
 				width: 1200px;
-				margin: 0 auto;
+				margin: 50px auto;
 			}
+			
+			.live-message-area .left-bar ul li {
+				padding-bottom: 0px;
+				list-style-type: none;
+				margin: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				list-style-image: none;
+				padding-top: 0px;
+			}
+			
+			.live-message-area .left-bar ul li a {
+				line-height: 50px;
+				margin: 2px 0px;
+				display: block;
+				background: url(img/message/sub_btn.png) no-repeat;
+				height: 50px;
+				text-decoration: none;
+				padding-left: 60px;
+				color: #4c4c4c;
+				font-size: 14px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			.live-message-area .main .header-bar {
+				position: relative;
+				border-bottom: 1px solid #dbdfea;
+				margin-bottom: 50px;
+				font-size: 14px;
+			}
+			
+			.live-message-area .main .header-bar h2 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.live-message-area .main .header-bar .decorate {
+				position: absolute;
+				bottom: -5px;
+			}
+			
+			.live-message-area .main .message-form .verify-img {
+				padding: 5px 15px;
+			}
+			
+			.live-message-area .main .message-form .change-img {
+				color: #666;
+				font-size: 14px;
+				line-height: 38px;
+			}
+			
+			.live-message-area .main .message-form .submit-btn {
+				width: 72px;
+				height: 31px;
+				border: 0;
+				color: #fff;
+				cursor: pointer;
+				font-size: 14px;
+				font-weight: bold;
+				text-align: center;
+				background-color: #008141;
+			}
+			
+			.live-message-area .main .message-show-area {
+				font-size: 12px;
+			}
+			
+			.live-message-area .main .message-show-area ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.live-message-area .main .message-show-area .title {
+				width: 100%;
+				float: left;
+				overflow: hidden;
+				margin: 10px 0;
+			}
+			
+			.live-message-area .main .message-show-area .title span {
+				color: #666;
+			}
+			
+			.live-message-area .main .message-show-area .title em {
+				color: #f08300;
+				font-style: normal;
+			}
+			
+			.live-message-area .main .message-show-area .title li {
+				float: left;
+				height: 20px;
+				line-height: 20px;
+				padding: 0 20px;
+				white-space: nowrap;
+			}
+			
+			.live-message-area .main .message-show-area .title .person {
+				background: url(img/message/pic-lyr.gif) 0 0 no-repeat;
+			}
+			
+			.live-message-area .main .message-show-area .title .time {
+				background: url(img/message/pic-time.gif) 0 0 no-repeat;
+			}
+			
+			.live-message-area .main .message-show-area .list {
+				margin: 0;
+				padding: 0;
+				clear: both;
+				width: 99%;
+				overflow: hidden;
+				border: 1px solid #9be3f9;
+				margin-bottom: 25px;
+			}
+			
+			.live-message-area .main .message-show-area .list li {
+				line-height: 20px;
+			}
+			
+			.live-message-area .main .message-show-area .list li span {
+				color: #06c;
+			}
+			
+			.live-message-area .main .message-show-area .list .li-con {
+				float: left;
+				width: 100%;
+				overflow: hidden;
+				border: 1px solid #fff;
+				border-top: none;
+				padding: 5px 0 5px 5px;
+				background: #f8f8f8;
+			}
+			
+			.live-message-area .main .message-show-area .list .li-con .pic {
+				float: left;
+				width: 35px;
+			}
+			
+			.live-message-area .main .message-show-area .list .li-con .info {
+				float: left;
+				width: 90%;
+			}
+			
+			.live-message-area .main .message-show-area .page-status {
+				float: left;
+			}
+			
+			.live-message-area .main .message-show-area .pagination {
+				float: right;
+			}
+			/*message end*/
 			
 			.footer-area {
 				background-color: #00428c;
@@ -198,10 +351,10 @@
 			<!--live-message-->
 			<div class="live-message-area">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-4 left-bar">
 						<ul class="list2">
 							<li class="menu-none">
-								<img src="img/message/sub_gy.png"/>
+								<img src="img/message/sub_gy.png" />
 							</li>
 							<li class="menu-none">
 								<a id="comContent2_3" href="/about/i=3&amp;comContentId=3.html" title="公司简介" class="menu-text1">公司简介</a>
@@ -227,11 +380,27 @@
 							<li class="menu-none">
 								<a id="comContent2_5" href="/about/i=5&amp;comContentId=5.html" title="联系我们" class="menu-text1">联系我们</a>
 							</li>
+							<li class="menu-none">
+								<img src="img/message/sub_lxwm.png" />
+							</li>
 						</ul>
 					</div>
-					<div class="col-8 order-md-1">
-						<h4 class="mb-3">在线留言</h4>
-						<form>
+					<div class="col-8 main">
+						<div class="row header-bar">
+							<div class="col-7">
+								<h2>在线留言</h2>
+							</div>
+							<div class="col-5">
+								您现在的位置：
+								<a href="/index.html" target="_self">返回首页</a>
+								&gt;&gt;&nbsp;
+								<a href="/messages.html" target="_self">在线留言</a>
+							</div>
+							<div class="decorate">
+								<img src="img/message/border-topl.jpg" />
+							</div>
+						</div>
+						<form class="message-form">
 							<div class="form-group row">
 								<label for="messageInfo" class="col-sm-2 col-form-label">留言内容：</label>
 								<div class="col-sm-10">
@@ -241,38 +410,155 @@
 							<div class="form-group row">
 								<label for="messagePerson" class="col-sm-2 col-form-label">留言人：</label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control" id="messagePerson" placeholder="小于等于20个字符（包括A-Z、a-z、0-9、汉字、不含特殊字符）">
+									<input type="text" class="form-control" id="messagePerson" placeholder="小于等于20个字符（包括A-Z、a-z、0-9、汉字、不含特殊字符）">
 								</div>
 							</div>
 							<div class="form-group row">
 								<label for="messageEmail" class="col-sm-2 col-form-label">您的邮箱：</label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control" id="messageEmail" placeholder="示例：example@mail.com">
+									<input type="email" class="form-control" id="messageEmail" placeholder="示例：example@mail.com">
 								</div>
 							</div>
 							<div class="form-group row">
 								<label for="messagePhone" class="col-sm-2 col-form-label">联系电话：</label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control" id="messagePhone" placeholder="小于等于32个字符（包含0-9、-、（、）、顿号）
+									<input type="tel" class="form-control" id="messagePhone" placeholder="小于等于32个字符（包含0-9、-、（、）、顿号）
 ">
 								</div>
 							</div>
 							<div class="form-group row">
 								<label for="messageAddress" class="col-sm-2 col-form-label">所在地区：</label>
 								<div class="col-sm-10">
-									<input type="password" class="form-control" id="messageAddress" placeholder="">
+									<input type="text" class="form-control" id="messageAddress" placeholder="">
 								</div>
 							</div>
 							<div class="form-group row">
 								<label for="messageVerifyCode" class="col-sm-2 col-form-label">验证码：</label>
-								<div class="col-sm-10">
-									<input type="password" class="form-control" id="messageVerifyCode" placeholder="">
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="messageVerifyCode" placeholder="">
+								</div>
+								<div class="col-sm-1 verify-img">
+									<img src="img/message/verifyCode.png" />
+								</div>
+								<div class="col-sm-3 change-img">
+									<span>看不清楚？换张图片</span>
 								</div>
 							</div>
 							<div class="form-group row">
-								<button>发表留言</button>
+								<label for="" class="col-sm-2 col-form-label"></label>
+								<div class="col-sm-10">
+									<button class="submit-btn">发表留言</button>
+								</div>
 							</div>
 						</form>
+						<!--message-show-->
+						<div class="message-show-area">
+							<div class="content">
+								<ul class="title">
+									<li class="person"><span>留言人：</span>
+										<em class="foucetext">
+				
+				热热</em>
+									</li>
+									<li class="time"><span>留言时间：</span>2018年6月5日
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="li-con">
+										<div class="pic">
+										</div>
+										<div class="info">
+											<span>
+				留言：</span> 恶趣味
+										</div>
+									</li>
+								</ul>
+								<ul class="title">
+									<li class="person"><span>留言人：</span>
+										<em class="foucetext">
+				
+				热热</em>
+									</li>
+									<li class="time"><span>留言时间：</span>2018年6月5日
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="li-con">
+										<div class="pic">
+										</div>
+										<div class="info">
+											<span>
+				留言：</span> 瑞特瑞特
+										</div>
+									</li>
+								</ul>
+								<ul class="title">
+									<li class="person"><span>留言人：</span>
+										<em class="foucetext">
+				
+				官方</em>
+									</li>
+									<li class="time"><span>留言时间：</span>2018年6月5日
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="li-con">
+										<div class="pic">
+										</div>
+										<div class="info">
+											<span>
+				留言：</span> 热热热发
+										</div>
+									</li>
+								</ul>
+								<ul class="title">
+									<li class="person"><span>留言人：</span>
+										<em class="foucetext">
+				
+				等待</em>
+									</li>
+									<li class="time"><span>留言时间：</span>2018年6月5日
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="li-con">
+										<div class="pic">
+										</div>
+										<div class="info">
+											<span>
+				留言：</span> 那年夏天
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!--pagination-->
+							<div class="page-status">
+								当前显示 <span>1</span>-<span>4</span> 条 共<span>9</span>条
+							</div>
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

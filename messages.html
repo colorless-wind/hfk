@@ -85,14 +85,14 @@
 				/*width: 100%;*/
 				margin: 0 auto;
 			}
-			/*message start*/
+			/*main start*/
 			
-			.live-message-area {
+			.main-area {
 				width: 1200px;
 				margin: 50px auto;
 			}
 			
-			.live-message-area .left-bar ul li {
+			.main-area .left-bar ul li {
 				padding-bottom: 0px;
 				list-style-type: none;
 				margin: 0px;
@@ -102,7 +102,7 @@
 				padding-top: 0px;
 			}
 			
-			.live-message-area .left-bar ul li a {
+			.main-area .left-bar ul li a {
 				line-height: 50px;
 				margin: 2px 0px;
 				display: block;
@@ -116,34 +116,34 @@
 				font-weight: bold;
 			}
 			
-			.live-message-area .main .header-bar {
+			.main-area .content .header-bar {
 				position: relative;
 				border-bottom: 1px solid #dbdfea;
 				margin-bottom: 50px;
 				font-size: 14px;
 			}
 			
-			.live-message-area .main .header-bar h2 {
+			.main-area .content .header-bar h2 {
 				font-size: 18px;
 				font-weight: bold;
 			}
 			
-			.live-message-area .main .header-bar .decorate {
+			.main-area .content .header-bar .decorate {
 				position: absolute;
 				bottom: -5px;
 			}
 			
-			.live-message-area .main .message-form .verify-img {
+			.main-area .content .message-form .verify-img {
 				padding: 5px 15px;
 			}
 			
-			.live-message-area .main .message-form .change-img {
+			.main-area .content .message-form .change-img {
 				color: #666;
 				font-size: 14px;
 				line-height: 38px;
 			}
 			
-			.live-message-area .main .message-form .submit-btn {
+			.main-area .content .message-form .submit-btn {
 				width: 72px;
 				height: 31px;
 				border: 0;
@@ -155,33 +155,34 @@
 				background-color: #008141;
 			}
 			
-			.live-message-area .main .message-show-area {
+			.main-area .content .message-show-area {
 				font-size: 12px;
+				margin-top: 50px;
 			}
 			
-			.live-message-area .main .message-show-area ul {
+			.main-area .content .message-show-area ul {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 			}
 			
-			.live-message-area .main .message-show-area .title {
+			.main-area .content .message-show-area .title {
 				width: 100%;
 				float: left;
 				overflow: hidden;
 				margin: 10px 0;
 			}
 			
-			.live-message-area .main .message-show-area .title span {
+			.main-area .content .message-show-area .title span {
 				color: #666;
 			}
 			
-			.live-message-area .main .message-show-area .title em {
+			.main-area .content .message-show-area .title em {
 				color: #f08300;
 				font-style: normal;
 			}
 			
-			.live-message-area .main .message-show-area .title li {
+			.main-area .content .message-show-area .title li {
 				float: left;
 				height: 20px;
 				line-height: 20px;
@@ -189,15 +190,15 @@
 				white-space: nowrap;
 			}
 			
-			.live-message-area .main .message-show-area .title .person {
+			.main-area .content .message-show-area .title .person {
 				background: url(img/message/pic-lyr.gif) 0 0 no-repeat;
 			}
 			
-			.live-message-area .main .message-show-area .title .time {
+			.main-area .content .message-show-area .title .time {
 				background: url(img/message/pic-time.gif) 0 0 no-repeat;
 			}
 			
-			.live-message-area .main .message-show-area .list {
+			.main-area .content .message-show-area .list {
 				margin: 0;
 				padding: 0;
 				clear: both;
@@ -207,15 +208,15 @@
 				margin-bottom: 25px;
 			}
 			
-			.live-message-area .main .message-show-area .list li {
+			.main-area .content .message-show-area .list li {
 				line-height: 20px;
 			}
 			
-			.live-message-area .main .message-show-area .list li span {
+			.main-area .content .message-show-area .list li span {
 				color: #06c;
 			}
 			
-			.live-message-area .main .message-show-area .list .li-con {
+			.main-area .content .message-show-area .list .li-con {
 				float: left;
 				width: 100%;
 				overflow: hidden;
@@ -225,24 +226,24 @@
 				background: #f8f8f8;
 			}
 			
-			.live-message-area .main .message-show-area .list .li-con .pic {
+			.main-area .content .message-show-area .list .li-con .pic {
 				float: left;
 				width: 35px;
 			}
 			
-			.live-message-area .main .message-show-area .list .li-con .info {
+			.main-area .content .message-show-area .list .li-con .info {
 				float: left;
 				width: 90%;
 			}
 			
-			.live-message-area .main .message-show-area .page-status {
+			.main-area .content .message-show-area .page-status {
 				float: left;
 			}
 			
-			.live-message-area .main .message-show-area .pagination {
+			.main-area .content .message-show-area .pagination {
 				float: right;
 			}
-			/*message end*/
+			/*main end*/
 			
 			.footer-area {
 				background-color: #00428c;
@@ -348,63 +349,65 @@
 		</div>
 		<!--main-->
 		<div class="main-area">
-			<!--live-message-->
-			<div class="live-message-area">
-				<div class="row">
-					<div class="col-4 left-bar">
-						<ul class="list2">
-							<li class="menu-none">
-								<img src="img/message/sub_gy.png" />
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_3" href="/about/i=3&amp;comContentId=3.html" title="公司简介" class="menu-text1">公司简介</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_7" href="/about/i=7&amp;comContentId=7.html" title="企业文化" class="menu-text1">企业文化</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_4" href="/about/i=4&amp;comContentId=4.html" title="资质荣誉" class="menu-text1">资质荣誉</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_6" href="/about/i=6&amp;comContentId=6.html" title="人才理念" class="menu-text1">人才理念</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_9" href="/about/i=9&amp;comContentId=9.html" title="安全与责任" class="menu-text1">安全与责任</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_8" href="/about/i=8&amp;comContentId=8.html" title="现场风采" class="menu-text1">现场风采</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_10" href="/about/i=10&amp;comContentId=10.html" title="团队风采" class="menu-text1">团队风采</a>
-							</li>
-							<li class="menu-none">
-								<a id="comContent2_5" href="/about/i=5&amp;comContentId=5.html" title="联系我们" class="menu-text1">联系我们</a>
-							</li>
-							<li class="menu-none">
-								<img src="img/message/sub_lxwm.png" />
-							</li>
-						</ul>
-					</div>
-					<div class="col-8 main">
-						<div class="row header-bar">
-							<div class="col-7">
-								<h2>在线留言</h2>
-							</div>
-							<div class="col-5">
-								您现在的位置：
-								<a href="/index.html" target="_self">返回首页</a>
-								&gt;&gt;&nbsp;
-								<a href="/messages.html" target="_self">在线留言</a>
-							</div>
-							<div class="decorate">
-								<img src="img/message/border-topl.jpg" />
-							</div>
+			<div class="row">
+				<!--main left-bar-->
+				<div class="col-4 left-bar">
+					<ul class="menus">
+						<li class="menu-item">
+							<img src="img/message/sub_gy.png" />
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_3" href="/about/i=3&amp;comContentId=3.html" title="公司简介" class="menu-title">公司简介</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_7" href="/about/i=7&amp;comContentId=7.html" title="企业文化" class="menu-title">企业文化</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_4" href="/about/i=4&amp;comContentId=4.html" title="资质荣誉" class="menu-title">资质荣誉</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_6" href="/about/i=6&amp;comContentId=6.html" title="人才理念" class="menu-title">人才理念</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_9" href="/about/i=9&amp;comContentId=9.html" title="安全与责任" class="menu-title">安全与责任</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_8" href="/about/i=8&amp;comContentId=8.html" title="现场风采" class="menu-title">现场风采</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_10" href="/about/i=10&amp;comContentId=10.html" title="团队风采" class="menu-title">团队风采</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_5" href="/about/i=5&amp;comContentId=5.html" title="联系我们" class="menu-title">联系我们</a>
+						</li>
+						<li class="menu-item">
+							<img src="img/message/sub_lxwm.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="col-8 content">
+					<!--content header-bar-->
+					<div class="row header-bar">
+						<div class="col-7">
+							<h2>在线留言</h2>
 						</div>
+						<div class="col-5">
+							您现在的位置：
+							<a href="/index.html" target="_self">返回首页</a>
+							&gt;&gt;&nbsp;
+							<a href="/messages.html" target="_self">在线留言</a>
+						</div>
+						<div class="decorate">
+							<img src="img/message/border-topl.jpg" />
+						</div>
+					</div>
+					<!--live-message-->
+					<div class="live-message-area">
 						<form class="message-form">
 							<div class="form-group row">
 								<label for="messageInfo" class="col-sm-2 col-form-label">留言内容：</label>
 								<div class="col-sm-10">
-									<textarea class="form-control" id="messageInfo" placeholder="小于等于500字符"></textarea>
+									<span style="position: absolute;left: 0;color: red;">* </span><textarea class="form-control" id="messageInfo" placeholder="小于等于500字符"></textarea>
 								</div>
 							</div>
 							<div class="form-group row">
@@ -435,7 +438,7 @@
 							<div class="form-group row">
 								<label for="messageVerifyCode" class="col-sm-2 col-form-label">验证码：</label>
 								<div class="col-sm-3">
-									<input type="text" class="form-control" id="messageVerifyCode" placeholder="">
+									<span style="position: absolute;left: 0;color: red;">* </span><input type="text" class="form-control" id="messageVerifyCode" placeholder="">
 								</div>
 								<div class="col-sm-1 verify-img">
 									<img src="img/message/verifyCode.png" />
@@ -451,129 +454,130 @@
 								</div>
 							</div>
 						</form>
-						<!--message-show-->
-						<div class="message-show-area">
-							<div class="content">
-								<ul class="title">
-									<li class="person"><span>留言人：</span>
-										<em class="foucetext">
+					</div>
+
+					<!--message-show-->
+					<div class="message-show-area">
+						<div class="content">
+							<ul class="title">
+								<li class="person"><span>留言人：</span>
+									<em class="foucetext">
 				
 				热热</em>
-									</li>
-									<li class="time"><span>留言时间：</span>2018年6月5日
-									</li>
-								</ul>
-								<ul class="list">
-									<li class="li-con">
-										<div class="pic">
-										</div>
-										<div class="info">
-											<span>
+								</li>
+								<li class="time"><span>留言时间：</span>2018年6月5日
+								</li>
+							</ul>
+							<ul class="list">
+								<li class="li-con">
+									<div class="pic">
+									</div>
+									<div class="info">
+										<span>
 				留言：</span> 恶趣味
-										</div>
-									</li>
-								</ul>
-								<ul class="title">
-									<li class="person"><span>留言人：</span>
-										<em class="foucetext">
+									</div>
+								</li>
+							</ul>
+							<ul class="title">
+								<li class="person"><span>留言人：</span>
+									<em class="foucetext">
 				
 				热热</em>
-									</li>
-									<li class="time"><span>留言时间：</span>2018年6月5日
-									</li>
-								</ul>
-								<ul class="list">
-									<li class="li-con">
-										<div class="pic">
-										</div>
-										<div class="info">
-											<span>
+								</li>
+								<li class="time"><span>留言时间：</span>2018年6月5日
+								</li>
+							</ul>
+							<ul class="list">
+								<li class="li-con">
+									<div class="pic">
+									</div>
+									<div class="info">
+										<span>
 				留言：</span> 瑞特瑞特
-										</div>
-									</li>
-								</ul>
-								<ul class="title">
-									<li class="person"><span>留言人：</span>
-										<em class="foucetext">
+									</div>
+								</li>
+							</ul>
+							<ul class="title">
+								<li class="person"><span>留言人：</span>
+									<em class="foucetext">
 				
 				官方</em>
-									</li>
-									<li class="time"><span>留言时间：</span>2018年6月5日
-									</li>
-								</ul>
-								<ul class="list">
-									<li class="li-con">
-										<div class="pic">
-										</div>
-										<div class="info">
-											<span>
+								</li>
+								<li class="time"><span>留言时间：</span>2018年6月5日
+								</li>
+							</ul>
+							<ul class="list">
+								<li class="li-con">
+									<div class="pic">
+									</div>
+									<div class="info">
+										<span>
 				留言：</span> 热热热发
-										</div>
-									</li>
-								</ul>
-								<ul class="title">
-									<li class="person"><span>留言人：</span>
-										<em class="foucetext">
+									</div>
+								</li>
+							</ul>
+							<ul class="title">
+								<li class="person"><span>留言人：</span>
+									<em class="foucetext">
 				
 				等待</em>
-									</li>
-									<li class="time"><span>留言时间：</span>2018年6月5日
-									</li>
-								</ul>
-								<ul class="list">
-									<li class="li-con">
-										<div class="pic">
-										</div>
-										<div class="info">
-											<span>
+								</li>
+								<li class="time"><span>留言时间：</span>2018年6月5日
+								</li>
+							</ul>
+							<ul class="list">
+								<li class="li-con">
+									<div class="pic">
+									</div>
+									<div class="info">
+										<span>
 				留言：</span> 那年夏天
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!--pagination-->
-							<div class="page-status">
-								当前显示 <span>1</span>-<span>4</span> 条 共<span>9</span>条
-							</div>
-							<ul class="pagination">
-								<li class="page-item">
-									<a class="page-link" href="#" aria-label="Previous">
-										<span aria-hidden="true">&laquo;</span>
-										<span class="sr-only">Previous</span>
-									</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link" href="#">1</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link" href="#">2</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link" href="#">3</a>
-								</li>
-								<li class="page-item">
-									<a class="page-link" href="#" aria-label="Next">
-										<span aria-hidden="true">&raquo;</span>
-										<span class="sr-only">Next</span>
-									</a>
+									</div>
 								</li>
 							</ul>
 						</div>
+						<!--pagination-->
+						<div class="page-status">
+							当前显示 <span>1</span>-<span>4</span> 条 共<span>9</span>条
+						</div>
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+									<span class="sr-only">Previous</span>
+								</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">1</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">2</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#">3</a>
+							</li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+									<span class="sr-only">Next</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<!--footer-->
-			<div class="footer-area">
-				<div class="footer">
-					<div class="copyright">
-						<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
-					</div>
-					<div class="support">
-						<p>
-							<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
-						</p>
-					</div>
+		</div>
+		<!--footer-->
+		<div class="footer-area">
+			<div class="footer">
+				<div class="copyright">
+					<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
+				</div>
+				<div class="support">
+					<p>
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
+					</p>
 				</div>
 			</div>
 		</div>

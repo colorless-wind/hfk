@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>北京华丰科能新能源科技有限公司</title>
+
+		<!--bootstap-->
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.1/css/bootstrap.css" />
+		<!--swiper4-->
+		<link rel="stylesheet" type="text/css" href="../lib/swiper4/css/swiper.css" />
+		<!--公有css-->
+		<link rel="stylesheet" type="text/css" href="../public/public.css" />
+		<!--私有css-->
+		<link rel="stylesheet" type="text/css" href="" />
+
+		<!--bootstap-->
+		<script src="../lib/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--bootstap-->
+		<script src="../lib/bootstrap-4.1.1/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--swiper4-->
+		<script src="../lib/swiper4/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<!--公有js-->
+		<script src="../public/public.js" type="text/javascript" charset="utf-8"></script>
+		<!--私有js-->
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			html {
+				width: 100%;
+				background: url(../img/index/top.png) no-repeat center top;
+			}
+			
+			.top-area {
+				width: 1200px;
+				/*min-height: 132px;*/
+				margin: 0 auto;
+			}
+			
+			.top-area .row {
+				margin: 30px 0;
+			}
+			
+			.top-area .row .col-3,
+			.top-area .row .col-2 {
+				text-align: center;
+				line-height: 66px;
+			}
+			
+			.nav-bar-area {
+				background-color: #0a2f7d;
+				width: 100%;
+				min-height: 80px;
+			}
+			
+			.nav-bar {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+				color: white;
+				overflow: hidden;
+			}
+			
+			.nav-bar .nav-item {
+				float: left;
+				padding: 16px 3%;
+				text-align: center;
+			}
+			
+			.nav-bar .nav-item p {
+				/*cursor: pointer;*/
+				margin-bottom: 0px;
+			}
+			
+			.nav-bar .nav-item a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			.slider-area {
+				width: 100%;
+			}
+			
+			.swiper-slide {
+				/*width: 100%;*/
+				margin: 0 auto;
+			}
+			/*main start*/
+			
+			.main-area {
+				width: 1200px;
+				margin: 50px auto;
+			}
+			
+			.main-area .left-bar ul li {
+				padding-bottom: 0px;
+				list-style-type: none;
+				margin: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				list-style-image: none;
+				padding-top: 0px;
+			}
+			
+			.main-area .left-bar ul li a {
+				line-height: 50px;
+				margin: 2px 0px;
+				display: block;
+				background: url(../img/message/sub_btn.png) no-repeat;
+				height: 50px;
+				text-decoration: none;
+				padding-left: 60px;
+				color: #4c4c4c;
+				font-size: 14px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			.main-area .content .header-bar {
+				position: relative;
+				border-bottom: 1px solid #dbdfea;
+				margin-bottom: 50px;
+				font-size: 14px;
+			}
+			
+			.main-area .content .header-bar h2 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.main-area .content .header-bar .decorate {
+				position: absolute;
+				bottom: -5px;
+			}
+			/*contact-us part*/
+			
+			.main-area .content .contact-us-area .content {
+				padding-bottom: 30px;
+				width: 100%;
+				overflow: hidden;
+				word-break: break-all;
+				padding-top: 0px;
+			}
+			
+			.main-area .content .contact-us-area .content p {
+				font-size: 14px;
+			}
+			/*main end*/
+			
+			.footer-area {
+				background-color: #00428c;
+				width: 100%;
+				height: 50px;
+			}
+			
+			.footer-area .footer {
+				width: 1200px;
+				margin: 0 auto;
+				color: white;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			
+			.footer-area .footer .copyright {
+				float: left;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .copyright p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support {
+				float: right;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .support p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support a {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--top-->
+		<div class="top-area">
+			<div class="row">
+				<div class="col-7">
+					<img src="../img/index/f2cf0083-ea28-46c1-ad24-f70a1a86b08c.png" />
+				</div>
+				<div class="col-3">
+					<img src="../img/index/tel.png" />
+				</div>
+				<div class="col-2">
+					<img src="../img/index/ewm.png" />
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<div class="nav-bar-area">
+			<nav class="nav-bar">
+				<div class="nav-item">
+					<p>网站首页</p>
+					<p>HOME</p>
+				</div>
+				<div class="nav-item">
+					<p>关于我们</p>
+					<p>ABOUT</p>
+				</div>
+				<div class="nav-item">
+					<p>工程业绩</p>
+					<p>CASE</p>
+				</div>
+				<div class="nav-item">
+					<p>荣誉资质</p>
+					<p>HONORS</p>
+				</div>
+				<div class="nav-item">
+					<p>新闻资讯</p>
+					<p>NEWS</p>
+				</div>
+				<div class="nav-item">
+					<p>人才招聘</p>
+					<p>JOIN US</p>
+				</div>
+				<div class="nav-item">
+					<p>在线留言</p>
+					<p>MESSAGES</p>
+				</div>
+				<div class="nav-item">
+					<p>联系我们</p>
+					<p>CONTAXT</p>
+				</div>
+			</nav>
+		</div>
+		<!--slider-->
+		<div class="slider-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></div>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="main-area">
+			<div class="row">
+				<!--main left-bar-->
+				<div class="col-4 left-bar">
+					<ul class="menus">
+						<li class="menu-item">
+							<img src="../img/message/sub_gy.png" />
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_3" href="/about/i=3&amp;comContentId=3.html" title="公司简介" class="menu-title">公司简介</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_7" href="/about/i=7&amp;comContentId=7.html" title="企业文化" class="menu-title">企业文化</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_4" href="/about/i=4&amp;comContentId=4.html" title="资质荣誉" class="menu-title">资质荣誉</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_6" href="/about/i=6&amp;comContentId=6.html" title="人才理念" class="menu-title">人才理念</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_9" href="/about/i=9&amp;comContentId=9.html" title="安全与责任" class="menu-title">安全与责任</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_8" href="/about/i=8&amp;comContentId=8.html" title="现场风采" class="menu-title">现场风采</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_10" href="/about/i=10&amp;comContentId=10.html" title="团队风采" class="menu-title">团队风采</a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_5" href="/about/i=5&amp;comContentId=5.html" title="联系我们" class="menu-title">联系我们</a>
+						</li>
+						<li class="menu-item">
+							<img src="../img/message/sub_lxwm.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="col-8 content">
+					<!--content header-bar-->
+					<div class="row header-bar">
+						<div class="col-7">
+							<h2>联系我们</h2>
+						</div>
+						<div class="col-5">
+							您现在的位置：
+							<a href="../index.html" target="_self">返回首页</a>
+							&gt;&gt;&nbsp;
+							<a href="AboutUs.html" target="_self">联系我们</a>
+						</div>
+						<div class="decorate">
+							<img src="../img/message/border-topl.jpg" />
+						</div>
+					</div>
+
+					<!--contact-us-->
+					<div class="contact-us-area">
+						<div class="content">
+  	<div class="describe htmledit">
+  		<div class="FrontComContent_detail01-1498454924785_htmlbreak" id="FrontComContent_detail01-1498454924785_cont_1"
+				style="display: block;"><p>
+	<span style="color: #0a2f7d;"><strong>瑞丰电力工程集团有限公司</strong></span></p>
+<p>
+	联系人：宫莹</p>
+<p>
+	电 &nbsp;话：<span style="font-size: 16pt;"><span style="color: #ff0000;"><strong>0453-6414299</strong></span></span></p>
+<p>
+	地 &nbsp;址：黑龙江省牡丹江市江南开发区率宾路13号</p>
+<p>
+	邮 &nbsp;箱：<a href="mailto:mdjruifeng@163.com">mdjruifeng@163.com</a></p>
+<p style="margin-top: 20px;">
+	<style type="text/css">
+html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}	</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script></p>
+<!--百度地图容器-->
+<div id="dituContent" style="border-bottom: #ccc 1px solid; border-left: #ccc 1px solid; width: 850px; height: 450px; border-top: #ccc 1px solid; border-right: #ccc 1px solid;">
+	&nbsp;</div>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(129.638522,44.560479);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    //标注点数组
+    var markerArr = [{title:"牡丹江瑞丰电力工程有限公司",content:"地址：黑龙江省牡丹江市江南开发区率宾路13号<br/>电话：0453-6414299",point:"129.63801|44.559734",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    initMap();//创建和初始化地图
+</script></div>
+		</div>
+  </div>
+  
+  </div>
+					</div>
+					<!--footer-->
+					<div class="footer-area">
+						<div class="footer">
+							<div class="copyright">
+								<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
+							</div>
+							<div class="support">
+								<p>
+									<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<script type="text/javascript">
+						new Swiper('.swiper-container', {
+							//		direction: '',
+							autoplay: true,
+							loop: true,
+							centeredSlides: true,
+							//		setWrapperSize: true,
+							//		height:200,//你的slide高度
+							//		autoHeight:true,
+							effect: 'slide',
+							fadeEffect: {
+								crossFade: false,
+							},
+							on: {
+								slideChangeTransitionEnd: function() {
+									console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+									$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+								},
+							}
+						})
+
+						new Swiper('.case-show', {
+							//		direction: '',
+							autoplay: {
+								delay: 3000,
+								//					disableOnInteraction: false,
+								//					waitForTransition: false,
+								//					reverseDirection: true
+							},
+							loop: true,
+							//				centeredSlides: true,
+							//		setWrapperSize: true,
+							//		height:200,//你的slide高度
+							//		autoHeight:true,
+							slidesPerView: 4,
+							spaceBetween: 20,
+							effect: 'slide',
+							on: {
+								slideChangeTransitionEnd: function() {
+									console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+									$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+								},
+							}
+						})
+
+						$('.nav-item').first().css('background-color', 'green');
+						$('.nav-item').on('mouseover', function() {
+							$(this).siblings().css('background', 'none');
+							$(this).css('background-color', 'green');
+						})
+					</script>
+	</body>
+
+</html>

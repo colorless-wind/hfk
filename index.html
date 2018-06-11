@@ -168,6 +168,21 @@
 				text-align: right;
 			}
 			
+			.news-area .news-list ul {
+				padding: 0;
+			}
+			
+			.news-area .news-list ul li {
+				border-bottom: #ccc 1px dashed;
+				line-height: 35px;
+				padding-left: 12px;
+				background: url(img/index/xw_ico.png) no-repeat 0px center;
+				color: #000;
+				font-size: 14px;
+				font-weight: normal;
+				list-style: none;
+			}
+			
 			.footer-area {
 				background-color: #00428c;
 				width: 100%;
@@ -227,8 +242,10 @@
 		<div class="nav-bar-area">
 			<nav class="nav-bar">
 				<div class="nav-item">
-					<p>网站首页</p>
-					<p>HOME</p>
+					<a href="index.html">
+						<p>网站首页</p>
+						<p>HOME</p>
+					</a>
 				</div>
 				<div class="nav-item">
 					<a href="page/AboutUs.html">
@@ -237,8 +254,10 @@
 					</a>
 				</div>
 				<div class="nav-item">
-					<p>工程业绩</p>
-					<p>CASE</p>
+					<a href="page/Case.html">
+						<p>工程业绩</p>
+						<p>CASE</p>
+					</a>
 				</div>
 				<div class="nav-item">
 					<a href="page/Honors.html">
@@ -247,12 +266,16 @@
 					</a>
 				</div>
 				<div class="nav-item">
-					<p>新闻资讯</p>
-					<p>NEWS</p>
+					<a href="page/News.html">
+						<p>新闻资讯</p>
+						<p>NEWS</p>
+					</a>
 				</div>
 				<div class="nav-item">
-					<p>人才招聘</p>
-					<p>JOIN US</p>
+					<a href="page/JoinUs.html">
+						<p>人才招聘</p>
+						<p>JOIN US</p>
+					</a>
 				</div>
 				<div class="nav-item">
 					<a href="page/Messages.html">
@@ -323,12 +346,12 @@
 				<div class="content">
 					<div class="swiper-container case-show">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/12dbcda7-89ec-4028-8df0-f85a29e910a6.jpg" /></div>
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/331235db-6200-48cf-8f17-b6299d2dffb3.jpg" /></div>
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/3e9d0bd8-6254-48c8-be4e-f920fc0942a4.jpg" /></div>
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/944245c1-725e-4e66-98d4-7456a1769f1f.jpg" /></div>
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/c857dd1f-7644-491e-bb8b-a2cd16c4d58f.jpg" /></div>
-							<div class="swiper-slide" data-name="光大VISA世界杯卡" data-card-id="20423"><img src="img/index/cd60680a-9370-4175-afbe-12b7e253f1e5.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/12dbcda7-89ec-4028-8df0-f85a29e910a6.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/331235db-6200-48cf-8f17-b6299d2dffb3.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/3e9d0bd8-6254-48c8-be4e-f920fc0942a4.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/944245c1-725e-4e66-98d4-7456a1769f1f.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/c857dd1f-7644-491e-bb8b-a2cd16c4d58f.jpg" /></div>
+							<div class="swiper-slide"><img src="img/index/cd60680a-9370-4175-afbe-12b7e253f1e5.jpg" /></div>
 						</div>
 					</div>
 				</div>
@@ -355,9 +378,12 @@
 							</div>
 							<div class="news-list">
 								<ul>
-									<li><span>我国拟推行电力建筑工人实名制 需登记并经基本安全培训</span><span style="float: right;">发布时间：2016-09-09</span></li>
-									<li><span>思考！独立售电公司面临的四大风险</span><span style="float: right;">发布时间：2016-09-09</span></li>
-									<li><span>干货！风电开发建设法律知识：进场道路怎样建？侵权责任如何防？</span><span style="float: right;">发布时间：2016-09-09</span></li>
+									<li><span>我国拟推行电力建筑工人实名制 需登记并经基本安全培训</span><span style="float: right;font-size: 12px;"><span style="color: #999;">发布时间：</span>2017-09-09</span>
+									</li>
+									<li><span>思考！独立售电公司面临的四大风险</span><span style="float: right;font-size: 12px;"><span style="color: #999;">发布时间：</span>2017-12-23</span>
+									</li>
+									<li><span>干货！风电开发建设法律知识：进场道路怎样建？侵权责任如何防？</span><span style="float: right;font-size: 12px;"><span style="color: #999;">发布时间：</span>2018-04-12</span>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -389,54 +415,56 @@
 		</div>
 
 		<script type="text/javascript">
-			new Swiper('.swiper-container', {
-				//		direction: '',
-				autoplay: true,
-				loop: true,
-				centeredSlides: true,
-				//		setWrapperSize: true,
-				//		height:200,//你的slide高度
-				//		autoHeight:true,
-				effect: 'slide',
-				fadeEffect: {
-					crossFade: false,
-				},
-				on: {
-					slideChangeTransitionEnd: function() {
-						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
-						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
-					},
-				}
-			})
+			$(function() {
 
-			new Swiper('.case-show', {
-				//		direction: '',
-				autoplay: {
-					delay: 3000,
-					//					disableOnInteraction: false,
-					//					waitForTransition: false,
-					//					reverseDirection: true
-				},
-				loop: true,
-				//				centeredSlides: true,
-				//		setWrapperSize: true,
-				//		height:200,//你的slide高度
-				//		autoHeight:true,
-				slidesPerView: 4,
-				spaceBetween: 20,
-				effect: 'slide',
-				on: {
-					slideChangeTransitionEnd: function() {
-						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
-						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+				new Swiper('.swiper-container', {
+					//		direction: '',
+					autoplay: true,
+					loop: true,
+					centeredSlides: true,
+					//		setWrapperSize: true,
+					//		height:200,//你的slide高度
+					//		autoHeight:true,
+					effect: 'slide',
+					fadeEffect: {
+						crossFade: false,
 					},
-				}
-			})
+					on: {
+						slideChangeTransitionEnd: function() {
+							console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+							$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+						},
+					}
+				})
 
-			$('.nav-item').first().css('background-color', 'green');
-			$('.nav-item').on('mouseover', function() {
-				$(this).siblings().css('background', 'none');
-				$(this).css('background-color', 'green');
+				new Swiper('.case-show', {
+					//		direction: '',
+					width: 1200,
+					autoplay: {
+						delay: 3000,
+						//					disableOnInteraction: false,
+						//					waitForTransition: false,
+						//					reverseDirection: true
+					},
+					loop: true,
+					simulateTouch: false,
+					//				centeredSlides: true,
+					//		setWrapperSize: true,
+					//		height:200,//你的slide高度
+					//		autoHeight:true,
+					slidesPerView: 4,
+					spaceBetween: 20,
+					effect: 'slide',
+					on: {
+						slideChangeTransitionEnd: function() {},
+					}
+				})
+
+				$('.nav-item').first().css('background-color', 'green');
+				$('.nav-item').on('mouseover', function() {
+					$(this).siblings().css('background', 'none');
+					$(this).css('background-color', 'green');
+				})
 			})
 		</script>
 	</body>

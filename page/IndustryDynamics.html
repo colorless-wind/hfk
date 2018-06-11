@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>北京华丰科能新能源科技有限公司</title>
+
+		<!--bootstap-->
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.1/css/bootstrap.css" />
+		<!--swiper4-->
+		<link rel="stylesheet" type="text/css" href="../lib/swiper4/css/swiper.css" />
+		<!--公有css-->
+		<link rel="stylesheet" type="text/css" href="../public/public.css" />
+		<!--私有css-->
+		<link rel="stylesheet" type="text/css" href="" />
+
+		<!--bootstap-->
+		<script src="../lib/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--bootstap-->
+		<script src="../lib/bootstrap-4.1.1/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--swiper4-->
+		<script src="../lib/swiper4/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<!--公有js-->
+		<script src="../public/public.js" type="text/javascript" charset="utf-8"></script>
+		<!--私有js-->
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			html {
+				width: 100%;
+				background: url(../img/index/top.png) no-repeat center top;
+			}
+			
+			.top-area {
+				width: 1200px;
+				/*min-height: 132px;*/
+				margin: 0 auto;
+			}
+			
+			.top-area .row {
+				margin: 30px 0;
+			}
+			
+			.top-area .row .col-3,
+			.top-area .row .col-2 {
+				text-align: center;
+				line-height: 66px;
+			}
+			
+			.nav-bar-area {
+				background-color: #0a2f7d;
+				width: 100%;
+				min-height: 80px;
+			}
+			
+			.nav-bar {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+				color: white;
+				overflow: hidden;
+			}
+			
+			.nav-bar .nav-item {
+				float: left;
+				padding: 16px 3%;
+				text-align: center;
+			}
+			
+			.nav-bar .nav-item p {
+				/*cursor: pointer;*/
+				margin-bottom: 0px;
+			}
+			
+			.nav-bar .nav-item a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			.slider-area {
+				width: 100%;
+			}
+			
+			.swiper-slide {
+				/*width: 100%;*/
+				margin: 0 auto;
+			}
+			/*main start*/
+			
+			.main-area {
+				width: 1200px;
+				margin: 50px auto;
+			}
+			
+			.main-area .left-bar ul li {
+				padding-bottom: 0px;
+				list-style-type: none;
+				margin: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				list-style-image: none;
+				padding-top: 0px;
+			}
+			
+			.main-area .left-bar ul li a {
+				line-height: 50px;
+				margin: 2px 0px;
+				display: block;
+				background: url(../img/message/sub_btn.png) no-repeat;
+				height: 50px;
+				text-decoration: none;
+				padding-left: 60px;
+				color: #4c4c4c;
+				font-size: 14px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			.main-area .left-bar ul li:nth-child(6) a {
+				background: none;
+				padding: 0;
+			}
+			
+			.main-area .content .header-bar {
+				position: relative;
+				border-bottom: 1px solid #dbdfea;
+				margin-bottom: 50px;
+				font-size: 14px;
+			}
+			
+			.main-area .content .header-bar .navigator {
+				text-align: right;
+			}
+			
+			.main-area .content .header-bar h2 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.main-area .content .header-bar .decorate {
+				position: absolute;
+				bottom: -5px;
+			}
+			
+			.main-area .content .page-status {
+				float: left;
+			}
+			
+			.main-area .content .pagination {
+				float: right;
+				width: auto !important;
+			}
+			
+			.main-area .content .page-status {
+				float: left;
+				margin-top: 47px;
+			}
+			
+			.main-area .content .pagination {
+				float: right;
+				width: auto !important;
+				margin-top: 40px !important;
+			}
+			/*industry dynamics part*/
+			
+			.main-area .content .industry-dynamics-area {
+				margin-top: -50px;
+				font-size: 14px;
+			}
+			
+			.main-area .content .industry-dynamics-area .content {
+				width: 100%;
+				overflow: hidden;
+				word-break: break-all;
+				padding: 10px;
+				padding-left: 5px;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 ul {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li {
+				list-style: none;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 .content {
+				border-bottom: #ddd 1px dashed;
+				padding-bottom: 0px;
+				margin: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				float: left;
+				overflow: hidden;
+				padding-top: 0px;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle {
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul {
+				min-height: 1px;
+				width: 100%;
+				height: auto !important;
+				clear: both;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li {
+				text-align: left;
+				line-height: 50px;
+				padding-right: 0px;
+				white-space: nowrap;
+				float: left;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li.fontnews {
+				padding-bottom: 0px;
+				padding-left: 15px;
+				padding-right: 0px;
+				background: url(../img/news/icon-09.gif) no-repeat 0px center;
+				padding-top: 0px;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li.fontnews a {
+				color: #0a2f7d;
+				font-size: 14px;
+				font-weight: bold;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li.title {
+				width: 59%;
+				white-space: normal;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li h3 {
+				color: #000;
+				font-size: 12px;
+				font-weight: bold;
+				line-height: 50px;
+				margin: 0;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li h3 a {
+				color: #4c4c4c;
+				font-size: 14px;
+				font-weight: normal;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li.date {
+				text-align: right;
+				width: 29%;
+				color: #999;
+			}
+			
+			.main-area .content .industry-dynamics-area .content .newslist-01 li .newstitle ul li span {
+				color: #999;
+				font-size: 12px;
+			}
+			/*main end*/
+			
+			.footer-area {
+				background-color: #00428c;
+				width: 100%;
+				height: 50px;
+			}
+			
+			.footer-area .footer {
+				width: 1200px;
+				margin: 0 auto;
+				color: white;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			
+			.footer-area .footer .copyright {
+				float: left;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .copyright p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support {
+				float: right;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .support p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support a {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--top-->
+		<div class="top-area">
+			<div class="row">
+				<div class="col-7">
+					<img src="../img/index/f2cf0083-ea28-46c1-ad24-f70a1a86b08c.png" />
+				</div>
+				<div class="col-3">
+					<img src="../img/index/tel.png" />
+				</div>
+				<div class="col-2">
+					<img src="../img/index/ewm.png" />
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<div class="nav-bar-area">
+			<nav class="nav-bar">
+				<div class="nav-item">
+					<a href="../index.html">
+						<p>网站首页</p>
+						<p>HOME</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="AboutUs.html">
+						<p>关于我们</p>
+						<p>ABOUT</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Case.html">
+						<p>工程业绩</p>
+						<p>CASE</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Honors.html">
+						<p>荣誉资质</p>
+						<p>HONORS</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="News.html">
+						<p>新闻资讯</p>
+						<p>NEWS</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="JoinUs.html">
+						<p>人才招聘</p>
+						<p>JOIN US</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Messages.html">
+						<p>在线留言</p>
+						<p>MESSAGES</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="ContactUs.html">
+						<p>联系我们</p>
+						<p>CONTACT</p>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<!--slider-->
+		<div class="slider-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></div>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="main-area">
+			<div class="row">
+				<!--main left-bar-->
+				<div class="col-4 left-bar">
+					<ul class="menus">
+						<li class="menu-item">
+							<img src="../img/message/sub_gy.png" />
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_3" href="Notification.html" title="通知公告" class="menu-title">通知公告<span>(13)</span></a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_7" href="CompanyNews.html" title="公司新闻" class="menu-title">公司新闻<span>(92)</span></a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_4" href="IndustryDynamics.html" title="行业动态" class="menu-title">行业动态<span>(48)</span></a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_6" href="JoinUs.html" title="人才招聘" class="menu-title">人才招聘<span>(6)</span></a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_2" href="ContactUs.html" title="联系我们" class="menu-title"><img src="../img/message/sub_lxwm.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-8 content">
+					<!--content header-bar-->
+					<div class="row header-bar">
+						<div class="col-6">
+							<h2>行业动态</h2>
+						</div>
+						<div class="col-6 navigator">
+							您现在的位置：
+							<a href="../index.html" target="_self">返回首页</a>
+							&gt;&gt;&nbsp;
+							<a href="News.html" target="_self">新闻资讯</a>
+							&gt;&gt;&nbsp;
+							<a>行业动态</a>
+						</div>
+						<div class="decorate">
+							<img src="../img/message/border-topl.jpg" />
+						</div>
+					</div>
+
+					<!--industry-dynamics-->
+					<div class="industry-dynamics-area">
+						<div class="content">
+							<ul class="comstyle newslist-01">
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=270.html" title="勇担电网企业使命 助力现代化新龙江建设" target="_self">
+        									勇担电网企业使命 助力现代化新龙江建设</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196270_dtime" name="FrontNews_list01-1498457723196270_dtime" value="2018-06-04
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196270}_dateShow">2018-06-04</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196270_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196270}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=268.html" title="我国拟推行电力建筑工人实名制 需登记并经基本安全培训" target="_self">
+        									我国拟推行电力建筑工人实名制 需登记并经基本安全培训</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196268_dtime" name="FrontNews_list01-1498457723196268_dtime" value="2018-05-16
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196268}_dateShow">2018-05-16</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196268_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196268}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=264.html" title="思考！独立售电公司面临的四大风险" target="_self">
+        									思考！独立售电公司面临的四大风险</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196264_dtime" name="FrontNews_list01-1498457723196264_dtime" value="2018-04-24
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196264}_dateShow">2018-04-24</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196264_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196264}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=263.html" title="干货！风电开发建设法律知识：进场道路怎样建？侵权责任如何防？" target="_self">
+        									干货！风电开发建设法律知识：进场道路怎样建？侵权责任如何防？</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196263_dtime" name="FrontNews_list01-1498457723196263_dtime" value="2018-04-02
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196263}_dateShow">2018-04-02</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196263_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196263}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=261.html" title="风电运维前景预测丨2023年运维市场规模将超过200亿元V" target="_self">
+        									风电运维前景预测丨2023年运维市场规模将超过200亿元V</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196261_dtime" name="FrontNews_list01-1498457723196261_dtime" value="2018-03-14
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196261}_dateShow">2018-03-14</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196261_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196261}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=259.html" title="国网黑龙江关于供应商不良行为处理情况的通报（2018年1月）" target="_self">
+        									国网黑龙江关于供应商不良行为处理情况的通报（2018年1月）</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196259_dtime" name="FrontNews_list01-1498457723196259_dtime" value="2018-02-27
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196259}_dateShow">2018-02-27</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196259_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196259}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=255.html" title="2017年黑龙江省风电发电量完成108亿千瓦时 同比增长23%" target="_self">
+        									2017年黑龙江省风电发电量完成108亿千瓦时 同比增长23...</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196255_dtime" name="FrontNews_list01-1498457723196255_dtime" value="2018-02-09
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196255}_dateShow">2018-02-09</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196255_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196255}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=253.html" title="黑龙江电力市场管理委员会成立 大力推进电力市场化改革" target="_self">
+        									黑龙江电力市场管理委员会成立 大力推进电力市场化改革</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196253_dtime" name="FrontNews_list01-1498457723196253_dtime" value="2018-01-29
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196253}_dateShow">2018-01-29</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196253_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196253}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=251.html" title="黑龙江风电发展框架明晰" target="_self">
+        									黑龙江风电发展框架明晰</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196251_dtime" name="FrontNews_list01-1498457723196251_dtime" value="2018-01-25
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196251}_dateShow">2018-01-25</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196251_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196251}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num1">
+									<div class="newstitle">
+										<ul>
+											<li class="fontnews">
+												<a href="/xw/newsCategoryId=10.html" title="行业动态" target="_self">
+													行业动态</a>：
+											</li>
+											<li class="title">
+												<h3>
+						<a href="/xw_detail/newsId=249.html" title="输配电价改革接近完成 企业用电成本将再降" target="_self">
+        									输配电价改革接近完成 企业用电成本将再降</a>
+        							</h3>
+											</li>
+											<input type="hidden" id="FrontNews_list01-1498457723196249_dtime" name="FrontNews_list01-1498457723196249_dtime" value="2018-01-23
+">
+											<li class="date"><span>发布时间：</span>(<span id="FrontNews_list01-1498457723196249}_dateShow">2018-01-23</span>)</li>
+											<script>
+												var datime = trim(document.getElementById('FrontNews_list01-1498457723196249_dtime').value);
+												document.getElementById('FrontNews_list01-1498457723196249}_dateShow').innerHTML = datime;
+											</script>
+										</ul>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+							</ul>
+
+							<!--pagination-->
+							<div class="page-status">
+								当前显示 <span>1</span>-<span>10</span> 条 共 <span>48</span> 条
+							</div>
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">5</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer-area">
+			<div class="footer">
+				<div class="copyright">
+					<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
+				</div>
+				<div class="support">
+					<p>
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			new Swiper('.swiper-container', {
+				//		direction: '',
+				autoplay: true,
+				loop: true,
+				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				effect: 'slide',
+				fadeEffect: {
+					crossFade: false,
+				},
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			new Swiper('.case-show', {
+				//		direction: '',
+				autoplay: {
+					delay: 3000,
+					//					disableOnInteraction: false,
+					//					waitForTransition: false,
+					//					reverseDirection: true
+				},
+				loop: true,
+				//				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				slidesPerView: 4,
+				spaceBetween: 20,
+				effect: 'slide',
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			$('.nav-item').first().css('background-color', 'green');
+			$('.nav-item').on('mouseover', function() {
+				$(this).siblings().css('background', 'none');
+				$(this).css('background-color', 'green');
+			})
+		</script>
+	</body>
+
+</html>

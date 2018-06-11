@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>北京华丰科能新能源科技有限公司</title>
+
+		<!--bootstap-->
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.1/css/bootstrap.css" />
+		<!--swiper4-->
+		<link rel="stylesheet" type="text/css" href="../lib/swiper4/css/swiper.css" />
+		<!--公有css-->
+		<link rel="stylesheet" type="text/css" href="../public/public.css" />
+		<!--私有css-->
+		<link rel="stylesheet" type="text/css" href="" />
+
+		<!--bootstap-->
+		<script src="../lib/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--bootstap-->
+		<script src="../lib/bootstrap-4.1.1/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--swiper4-->
+		<script src="../lib/swiper4/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<!--公有js-->
+		<script src="../public/public.js" type="text/javascript" charset="utf-8"></script>
+		<!--私有js-->
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			html {
+				width: 100%;
+				background: url(../img/index/top.png) no-repeat center top;
+			}
+			
+			.top-area {
+				width: 1200px;
+				/*min-height: 132px;*/
+				margin: 0 auto;
+			}
+			
+			.top-area .row {
+				margin: 30px 0;
+			}
+			
+			.top-area .row .col-3,
+			.top-area .row .col-2 {
+				text-align: center;
+				line-height: 66px;
+			}
+			
+			.nav-bar-area {
+				background-color: #0a2f7d;
+				width: 100%;
+				min-height: 80px;
+			}
+			
+			.nav-bar {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+				color: white;
+				overflow: hidden;
+			}
+			
+			.nav-bar .nav-item {
+				float: left;
+				padding: 16px 3%;
+				text-align: center;
+			}
+			
+			.nav-bar .nav-item p {
+				/*cursor: pointer;*/
+				margin-bottom: 0px;
+			}
+			
+			.nav-bar .nav-item a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			.slider-area {
+				width: 100%;
+			}
+			
+			.swiper-slide {
+				/*width: 100%;*/
+				margin: 0 auto;
+			}
+			/*main start*/
+			
+			.main-area {
+				width: 1200px;
+				margin: 50px auto;
+			}
+			
+			.main-area .left-bar ul li {
+				padding-bottom: 0px;
+				list-style-type: none;
+				margin: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				list-style-image: none;
+				padding-top: 0px;
+			}
+			
+			.main-area .left-bar ul li a {
+				line-height: 50px;
+				margin: 2px 0px;
+				display: block;
+				background: url(../img/message/sub_btn.png) no-repeat;
+				height: 50px;
+				text-decoration: none;
+				padding-left: 60px;
+				color: #4c4c4c;
+				font-size: 14px;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			
+			.main-area .left-bar ul li:nth-child(3) a {
+				background: none;
+				padding: 0;
+			}
+			
+			.main-area .content .header-bar {
+				position: relative;
+				border-bottom: 1px solid #dbdfea;
+				margin-bottom: 50px;
+				font-size: 14px;
+			}
+			
+			.main-area .content .header-bar .navigator {
+				text-align: right;
+			}
+			
+			.main-area .content .header-bar h2 {
+				font-size: 18px;
+				font-weight: bold;
+			}
+			
+			.main-area .content .header-bar .decorate {
+				position: absolute;
+				bottom: -5px;
+			}
+			
+			.main-area .content .page-status {
+				float: left;
+				margin-top: 47px;
+			}
+			
+			.main-area .content .pagination {
+				float: right;
+				width: auto !important;
+				margin-top: 40px !important;
+			}
+			/*case part*/
+			
+			.main-area .content .case-area {
+				margin-top: -50px;
+				font-size: 14px;
+				min-width: 900px;
+			}
+			
+			.main-area .content .case-area .content {
+				width: 100%;
+				overflow: hidden;
+				word-break: break-all;
+				padding: 10px 0;
+			}
+			
+			.main-area .content .case-area .content ul {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			
+			.main-area .content .case-area .content li {
+				list-style: none;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 {
+				padding: 0;
+				margin: 0;
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content {
+				margin: 20px 6px 10px;
+				width: 280px;
+				float: left;
+				overflow: hidden;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pic-module {
+				position: relative;
+				width: 280px;
+				float: left;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pic-module .pic a {
+				border-bottom: medium none;
+				text-align: center;
+				border-left: medium none;
+				padding-bottom: 0px;
+				padding-left: 0px;
+				padding-right: 0px;
+				display: block;
+				float: left;
+				border-top: medium none;
+				border-right: medium none;
+				padding-top: 0px;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pic-module .pic a img {
+				border-bottom: 0px;
+				border-left: 0px;
+				width: 280px;
+				height: 210px;
+				border-top: 0px;
+				border-right: 0px;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pro-module {
+				text-align: center;
+				background-color: #008141;
+				width: 100%;
+				float: left;
+				height: 40px;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pro-module h1 {
+				margin: 0px;
+				color: #0068cc;
+				font-size: 14px;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pro-module ul li span {
+				color: #999;
+				font-weight: normal;
+				display: none;
+			}
+			
+			.main-area .content .case-area .content .productlist-02 .content .pro-module a {
+				color: #fff;
+				line-height: 40px;
+			}
+			/*main end*/
+			
+			.footer-area {
+				background-color: #00428c;
+				width: 100%;
+				height: 50px;
+			}
+			
+			.footer-area .footer {
+				width: 1200px;
+				margin: 0 auto;
+				color: white;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			
+			.footer-area .footer .copyright {
+				float: left;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .copyright p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support {
+				float: right;
+				margin: 0;
+				line-height: 50px;
+			}
+			
+			.footer-area .footer .support p {
+				margin: 0;
+			}
+			
+			.footer-area .footer .support a {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--top-->
+		<div class="top-area">
+			<div class="row">
+				<div class="col-7">
+					<img src="../img/index/f2cf0083-ea28-46c1-ad24-f70a1a86b08c.png" />
+				</div>
+				<div class="col-3">
+					<img src="../img/index/tel.png" />
+				</div>
+				<div class="col-2">
+					<img src="../img/index/ewm.png" />
+				</div>
+			</div>
+		</div>
+		<!--nav-->
+		<div class="nav-bar-area">
+			<nav class="nav-bar">
+				<div class="nav-item">
+					<a href="../index.html">
+						<p>网站首页</p>
+						<p>HOME</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="AboutUs.html">
+						<p>关于我们</p>
+						<p>ABOUT</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Case.html">
+						<p>工程业绩</p>
+						<p>CASE</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Honors.html">
+						<p>荣誉资质</p>
+						<p>HONORS</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="News.html">
+						<p>新闻资讯</p>
+						<p>NEWS</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="JoinUs.html">
+						<p>人才招聘</p>
+						<p>JOIN US</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="Messages.html">
+						<p>在线留言</p>
+						<p>MESSAGES</p>
+					</a>
+				</div>
+				<div class="nav-item">
+					<a href="ContactUs.html">
+						<p>联系我们</p>
+						<p>CONTACT</p>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<!--slider-->
+		<div class="slider-area">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></div>
+					<div class="swiper-slide"><img src="../img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></div>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="main-area">
+			<div class="row">
+				<!--main left-bar-->
+				<div class="col-4 left-bar">
+					<ul class="menus">
+						<li class="menu-item">
+							<img src="../img/message/sub_gy.png" />
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_3" href="Case.html" title="工程业绩" class="menu-title">工程业绩<span>(17)</span></a>
+						</li>
+						<li class="menu-item">
+							<a id="comContent2_2" href="ContactUs.html" title="联系我们" class="menu-title"><img src="../img/message/sub_lxwm.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-8 content">
+					<!--content header-bar-->
+					<div class="row header-bar">
+						<div class="col-6">
+							<h2>工程业绩</h2>
+						</div>
+						<div class="col-6 navigator">
+							您现在的位置：
+							<a href="../index.html" target="_self">返回首页</a>
+							&gt;&gt;&nbsp;
+							<a href="Case.html" target="_self">工程业绩</a>
+						</div>
+						<div class="decorate">
+							<img src="../img/message/border-topl.jpg" />
+						</div>
+					</div>
+
+					<!--case-->
+					<div class="case-area">
+						<div class="content">
+							<ul class="mainul productlist-02">
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=42.html" title="云南曲靖株木山一期（99MW）风电项目场区配电施工（Ⅰ标段）" target="_self">
+												<img src="../img/case/fca3b050-6618-46ba-81a7-6079770f9755.jpg" id="FrontProducts_list01-1498456565630_42" alt="" title="云南曲靖株木山一期（99MW）风电项目场区配电施工（Ⅰ标段）" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=42.html" title="云南曲靖株木山一期（99MW）风电项目场区配电施工（Ⅰ标段）" target="_self">
+												云南曲靖株木山一期（99MW）...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=33.html" title="贵州威宁乐坪（54MW）风电项目场区配电工程" target="_self">
+												<img src="../img/case/e041d67b-c38f-42ab-be21-4d51110f5532.jpg" id="FrontProducts_list01-1498456565630_33" alt="" title="贵州威宁乐坪（54MW）风电项目场区配电工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=33.html" title="贵州威宁乐坪（54MW）风电项目场区配电工程" target="_self">
+												贵州威宁乐坪（54MW）风电项...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=31.html" title="贵州威宁大杉树（49.5MW）风电项目场区配电（Ⅰ、Ⅱ标段）工程" target="_self">
+												<img src="../img/case/2f81af03-0a88-405d-92fb-f9aa1c1e8fa4.jpg" id="FrontProducts_list01-1498456565630_31" alt="" title="贵州威宁大杉树（49.5MW）风电项目场区配电（Ⅰ、Ⅱ标段）工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=31.html" title="贵州威宁大杉树（49.5MW）风电项目场区配电（Ⅰ、Ⅱ标段）工程" target="_self">
+												贵州威宁大杉树（49.5MW）...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=25.html" title="云南陆良仕官风电项目场区配电施工工程" target="_self">
+												<img src="../img/case/c857dd1f-7644-491e-bb8b-a2cd16c4d58f.jpg" id="FrontProducts_list01-1498456565630_25" alt="" title="云南陆良仕官风电项目场区配电施工工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=25.html" title="云南陆良仕官风电项目场区配电施工工程" target="_self">
+												云南陆良仕官风电项目场区配电施...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=21.html" title="安利达沥青有限公司400KVA变压器移设工程" target="_self">
+												<img src="../img/case/944245c1-725e-4e66-98d4-7456a1769f1f.jpg" id="FrontProducts_list01-1498456565630_21" alt="" title="安利达沥青有限公司400KVA变压器移设工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=21.html" title="安利达沥青有限公司400KVA变压器移设工程" target="_self">
+												安利达沥青有限公司400KVA...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=37.html" title="安利达沥青有限公司变电所增容工程" target="_self">
+												<img src="../img/case/f439aa77-d411-4177-b785-51e6ad3d5dde.jpg" id="FrontProducts_list01-1498456565630_37" alt="" title="安利达沥青有限公司变电所增容工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=37.html" title="安利达沥青有限公司变电所增容工程" target="_self">
+												安利达沥青有限公司变电所增容工...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=24.html" title="大理剑川雪邦山风电项目场区配电工程" target="_self">
+												<img src="../img/case/331235db-6200-48cf-8f17-b6299d2dffb3.jpg" id="FrontProducts_list01-1498456565630_24" alt="" title="大理剑川雪邦山风电项目场区配电工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=24.html" title="大理剑川雪邦山风电项目场区配电工程" target="_self">
+												大理剑川雪邦山风电项目场区配电...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=35.html" title="飞龙潭山庄10KV外线及变电所新建工程" target="_self">
+												<img src="../img/case/cd60680a-9370-4175-afbe-12b7e253f1e5.jpg" id="FrontProducts_list01-1498456565630_35" alt="" title="飞龙潭山庄10KV外线及变电所新建工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=35.html" title="飞龙潭山庄10KV外线及变电所新建工程" target="_self">
+												飞龙潭山庄10KV外线及变电所...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=34.html" title="建分水22#临时变台工程建新工程" target="_self">
+												<img src="../img/case/12dbcda7-89ec-4028-8df0-f85a29e910a6.jpg" id="FrontProducts_list01-1498456565630_34" alt="" title="建分水22#临时变台工程建新工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=34.html" title="建分水22#临时变台工程建新工程" target="_self">
+												建分水22#临时变台工程建新工...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=36.html" title="龙源大庆风电项目筹建处绿色草原项目场区配网" target="_self">
+												<img src="../img/case/3e9d0bd8-6254-48c8-be4e-f920fc0942a4.jpg" id="FrontProducts_list01-1498456565630_36" alt="" title="龙源大庆风电项目筹建处绿色草原项目场区配网" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=36.html" title="龙源大庆风电项目筹建处绿色草原项目场区配网" target="_self">
+												龙源大庆风电项目筹建处绿色草原...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=39.html" title="龙源齐齐哈尔风电项目筹建处克东爱华项目场区配网工程" target="_self">
+												<img src="../img/case/ea1272e9-a9c5-48aa-b329-343cae731c85.jpg" id="FrontProducts_list01-1498456565630_39" alt="" title="龙源齐齐哈尔风电项目筹建处克东爱华项目场区配网工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=39.html" title="龙源齐齐哈尔风电项目筹建处克东爱华项目场区配网工程" target="_self">
+												龙源齐齐哈尔风电项目筹建处克东...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="content column-num3">
+									<div class="pic-module">
+										<div class="pic">
+											<a href="/case_detail/productId=41.html" title="磨刀石镇磨苇分93右22#临时变台新建工程" target="_self">
+												<img src="../img/case/fa01c3c3-7ab0-4de2-9b51-e7daf7b175e1.jpg" id="FrontProducts_list01-1498456565630_41" alt="" title="磨刀石镇磨苇分93右22#临时变台新建工程" onerror="this.src='/images/common/noimage.jpg'"></a>
+										</div>
+									</div>
+									<div class="pro-module">
+										<ul class="basic">
+											<li class="code">
+												<h1>
+										<span>商品名称：</span>
+										<strong>
+											<a href="/case_detail/productId=41.html" title="磨刀石镇磨苇分93右22#临时变台新建工程" target="_self">
+												磨刀石镇磨苇分93右22#临时...</a>
+										</strong>
+									</h1>
+											</li>
+										</ul>
+										<p class="buttonP">
+										</p>
+									</div>
+								</li>
+								<li class="clearBoth"></li>
+							</ul>
+							<!--pagination-->
+							<div class="page-status">
+								当前显示 <span>1</span>-<span>12</span> 条 共<span>17</span>条
+							</div>
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->
+		<div class="footer-area">
+			<div class="footer">
+				<div class="copyright">
+					<p> Copyright © 瑞丰电力工程集团有限公司 All Rights Reserved</p>
+				</div>
+				<div class="support">
+					<p>
+						<a href="http://www.miitbeian.gov.cn/" target="_blank">黑ICP备13002820号</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="http://haerbin.300.cn" target="_blank">中企动力 提供技术支持</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			new Swiper('.swiper-container', {
+				//		direction: '',
+				autoplay: true,
+				loop: true,
+				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				effect: 'slide',
+				fadeEffect: {
+					crossFade: false,
+				},
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			new Swiper('.case-show', {
+				//		direction: '',
+				autoplay: {
+					delay: 3000,
+					//					disableOnInteraction: false,
+					//					waitForTransition: false,
+					//					reverseDirection: true
+				},
+				loop: true,
+				//				centeredSlides: true,
+				//		setWrapperSize: true,
+				//		height:200,//你的slide高度
+				//		autoHeight:true,
+				slidesPerView: 4,
+				spaceBetween: 20,
+				effect: 'slide',
+				on: {
+					slideChangeTransitionEnd: function() {
+						console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
+						$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
+					},
+				}
+			})
+
+			$('.nav-item').first().css('background-color', 'green');
+			$('.nav-item').on('mouseover', function() {
+				$(this).siblings().css('background', 'none');
+				$(this).css('background-color', 'green');
+			})
+		</script>
+	</body>
+
+</html>

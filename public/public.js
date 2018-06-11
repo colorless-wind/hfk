@@ -1,9 +1,40 @@
 /*此文件为项目公用js*/
 
-/*禁止全局的默认滑动事件（有可能与自定义事件冲突）*/
-/*$('body').bind('touchmove', function(event) {
-	/、event.preventDefault();
-});*/
+//没有成功加载本地jquery时加载在线jquery库
+if(!$) {
+	document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"><\/script>');
+}
+
+/* 初始化操作 */
+$(function() {
+	//请求地址白名单列表
+	$.getJSON('/hfk/public/links.json', function(data, status, xhr) {
+		console.log(data);
+		if(status == 'success') {
+			//对页面绑定的href进行过滤（不包含JS的自定义绑定）
+			$('[href]').on('click', function(e) {
+				var link = $(this).attr('href');
+				var linkStatus = null;
+				for(obj in data) {
+					if(link.match(data[obj].value + '.' + data[obj].ext)) {
+						linkStatus = 'normal';
+						break;
+					}
+				}
+				if(linkStatus != 'normal') {
+					//阻止浏览器默认跳转
+					e.preventDefault();
+					//重定向到404页面
+					location.href = '404.html';
+					//alert('未知错误');
+				}
+			})
+		} else {
+			console.warn('请求异常，404引导功能目前不可用！');
+		}
+	})
+
+})
 
 /* 获取地址栏参数 */
 function GetQueryString(url, name) {

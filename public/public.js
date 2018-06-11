@@ -25,7 +25,7 @@ $(function() {
 					//阻止浏览器默认跳转
 					e.preventDefault();
 					//重定向到404页面
-					location.href = '404.html';
+					location.href = '/hfk/page/404.html';
 					//alert('未知错误');
 				}
 			})

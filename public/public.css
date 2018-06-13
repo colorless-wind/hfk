@@ -1,1 +1,7 @@
 /*此文件为公有样式*/
+
+@media screen and (max-width: 1024px) {
+	html {
+		width: 145% !important;
+	}
+}

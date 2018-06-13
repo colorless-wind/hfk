@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap-4.1.1/css/bootstrap.css" />
 		<!--swiper4-->
 		<link rel="stylesheet" type="text/css" href="lib/swiper4/css/swiper.css" />
+		<!--jquery-blinds-->
+		<link rel="stylesheet" type="text/css" href="lib/jquery-blinds-player/shutter.css">
 		<!--公有css-->
 		<link rel="stylesheet" type="text/css" href="public/public.css" />
 		<!--私有css-->
@@ -18,6 +20,9 @@
 		<script src="lib/jquery/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
 		<!--bootstap-->
 		<script src="lib/bootstrap-4.1.1/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<!--jquery-blinds-->
+		<script src="lib/jquery-blinds-player/velocity.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/jquery-blinds-player/shutter.js" type="text/javascript" charset="utf-8"></script>
 		<!--swiper4-->
 		<script src="lib/swiper4/js/swiper.js" type="text/javascript" charset="utf-8"></script>
 		<!--公有js-->
@@ -79,6 +84,23 @@
 			
 			.slider-area {
 				width: 100%;
+			}
+			
+			.shutter {
+				margin: 0 auto;
+				border-radius: 0;
+			}
+			
+			.shutter-btn li {
+				list-style: none;
+			}
+			
+			.shutter-btn li.prev {
+				opacity: 0.7;
+			}
+			
+			.shutter-btn li.next {
+				opacity: 0.7;
 			}
 			
 			.swiper-slide {
@@ -293,12 +315,19 @@
 		</div>
 		<!--slider-->
 		<div class="slider-area">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></div>
-					<div class="swiper-slide"><img src="img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></div>
-					<div class="swiper-slide"><img src="img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></div>
+			<div class="shutter">
+				<div class="shutter-img">
+					<a href="#" data-shutter-title=""><img src="img/index/34f8fdcb-5e33-4604-942c-0472ef01ddad.jpg" /></a>
+					<a href="#" data-shutter-title=""><img src="img/index/8077ef81-7014-4b47-b323-41a6e8bcce59.jpg" /></a>
+					<a href="#" data-shutter-title=""><img src="img/index/9933395f-485d-4051-b61c-85e56b4a5ab6.jpg" /></a>
 				</div>
+				<ul class="shutter-btn">
+					<li class="prev"></li>
+					<li class="next"></li>
+				</ul>
+				<!--<div class="shutter-desc">
+					<p>slide title</p>
+				</div>-->
 			</div>
 		</div>
 		<!--message-->
@@ -416,26 +445,15 @@
 
 		<script type="text/javascript">
 			$(function() {
-
-				new Swiper('.swiper-container', {
-					//		direction: '',
-					autoplay: true,
-					loop: true,
-					centeredSlides: true,
-					//		setWrapperSize: true,
-					//		height:200,//你的slide高度
-					//		autoHeight:true,
-					effect: 'slide',
-					fadeEffect: {
-						crossFade: false,
-					},
-					on: {
-						slideChangeTransitionEnd: function() {
-							console.log($('#xing-series-1').find('.swiper-slide-next').attr('data-name'))
-							$('#xing-series-1').find('.constellation').text($('#xing-series-1').find('.swiper-slide-next').attr('data-name'));
-						},
-					}
-				})
+				//百叶窗轮播
+				$('.shutter').shutter({
+					shutterW: window.screen.width, // 容器宽度
+					shutterH: 600, // 容器高度
+					isAutoPlay: true, // 是否自动播放
+					playInterval: 3000, // 自动播放时间
+					//curDisplay: 0, // 当前显示页
+					fullPage: false // 是否全屏展示
+				});
 
 				new Swiper('.case-show', {
 					//		direction: '',
